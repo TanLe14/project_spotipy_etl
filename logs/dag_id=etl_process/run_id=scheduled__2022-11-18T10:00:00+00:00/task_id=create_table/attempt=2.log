@@ -1,0 +1,24 @@
+[2022-11-21T12:02:06.747+0700] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: etl_process.create_table scheduled__2022-11-18T10:00:00+00:00 [queued]>
+[2022-11-21T12:02:06.759+0700] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: etl_process.create_table scheduled__2022-11-18T10:00:00+00:00 [queued]>
+[2022-11-21T12:02:06.760+0700] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-21T12:02:06.760+0700] {taskinstance.py:1363} INFO - Starting attempt 2 of 4
+[2022-11-21T12:02:06.760+0700] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-21T12:02:06.778+0700] {taskinstance.py:1383} INFO - Executing <Task(_PythonDecoratedOperator): create_table> on 2022-11-18 10:00:00+00:00
+[2022-11-21T12:02:06.807+0700] {standard_task_runner.py:55} INFO - Started process 133304 to run task
+[2022-11-21T12:02:06.810+0700] {standard_task_runner.py:82} INFO - Running: ['airflow', 'tasks', 'run', 'etl_process', 'create_table', 'scheduled__2022-11-18T10:00:00+00:00', '--job-id', '179', '--raw', '--subdir', '/home/tanle/Documents/Spotify_project/airflow_spotify.py/dags/extract.py', '--cfg-path', '/tmp/tmpnhf1sxj8']
+[2022-11-21T12:02:06.811+0700] {standard_task_runner.py:83} INFO - Job 179: Subtask create_table
+[2022-11-21T12:02:06.979+0700] {task_command.py:376} INFO - Running <TaskInstance: etl_process.create_table scheduled__2022-11-18T10:00:00+00:00 [running]> on host tanle-Precision-M4600
+[2022-11-21T12:02:07.157+0700] {taskinstance.py:1590} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=lexuantan2000@gmail.com
+AIRFLOW_CTX_DAG_OWNER=tanle
+AIRFLOW_CTX_DAG_ID=etl_process
+AIRFLOW_CTX_TASK_ID=create_table
+AIRFLOW_CTX_EXECUTION_DATE=2022-11-18T10:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=2
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-11-18T10:00:00+00:00
+[2022-11-21T12:02:07.175+0700] {python.py:177} INFO - Done. Returned value was: None
+[2022-11-21T12:02:07.306+0700] {taskinstance.py:1401} INFO - Marking task as SUCCESS. dag_id=etl_process, task_id=create_table, execution_date=20221118T100000, start_date=20221121T050206, end_date=20221121T050207
+[2022-11-21T12:02:07.404+0700] {local_task_job.py:164} INFO - Task exited with return code 0
+[2022-11-21T12:02:07.490+0700] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

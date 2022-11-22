@@ -1,0 +1,24 @@
+[2022-11-20T14:42:24.620+0700] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: test.task1 scheduled__2022-11-10T00:00:00+00:00 [queued]>
+[2022-11-20T14:42:24.674+0700] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: test.task1 scheduled__2022-11-10T00:00:00+00:00 [queued]>
+[2022-11-20T14:42:24.675+0700] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-20T14:42:24.675+0700] {taskinstance.py:1363} INFO - Starting attempt 1 of 6
+[2022-11-20T14:42:24.675+0700] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-20T14:42:24.741+0700] {taskinstance.py:1383} INFO - Executing <Task(PythonOperator): task1> on 2022-11-10 00:00:00+00:00
+[2022-11-20T14:42:24.752+0700] {standard_task_runner.py:55} INFO - Started process 46598 to run task
+[2022-11-20T14:42:24.758+0700] {standard_task_runner.py:82} INFO - Running: ['airflow', 'tasks', 'run', 'test', 'task1', 'scheduled__2022-11-10T00:00:00+00:00', '--job-id', '115', '--raw', '--subdir', '/home/tanle/Documents/Spotify_project/airflow_spotify.py/dags/test.py', '--cfg-path', '/tmp/tmplrjh4j_p']
+[2022-11-20T14:42:24.785+0700] {standard_task_runner.py:83} INFO - Job 115: Subtask task1
+[2022-11-20T14:42:25.550+0700] {task_command.py:376} INFO - Running <TaskInstance: test.task1 scheduled__2022-11-10T00:00:00+00:00 [running]> on host tanle-Precision-M4600
+[2022-11-20T14:42:25.981+0700] {taskinstance.py:1590} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=TanLe
+AIRFLOW_CTX_DAG_ID=test
+AIRFLOW_CTX_TASK_ID=task1
+AIRFLOW_CTX_EXECUTION_DATE=2022-11-10T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-11-10T00:00:00+00:00
+[2022-11-20T14:42:26.011+0700] {logging_mixin.py:120} INFO - 5
+[2022-11-20T14:42:26.012+0700] {python.py:177} INFO - Done. Returned value was: None
+[2022-11-20T14:42:26.079+0700] {taskinstance.py:1401} INFO - Marking task as SUCCESS. dag_id=test, task_id=task1, execution_date=20221110T000000, start_date=20221120T074224, end_date=20221120T074226
+[2022-11-20T14:42:26.349+0700] {local_task_job.py:164} INFO - Task exited with return code 0
+[2022-11-20T14:42:26.894+0700] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

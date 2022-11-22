@@ -1,0 +1,5 @@
+[2022-11-21T11:30:24.884+0700] {processor.py:154} INFO - Started process (PID=102629) to work on /home/tanle/Documents/Spotify_project/airflow_spotify.py/dags/extract.py
+[2022-11-21T11:30:24.885+0700] {processor.py:756} INFO - Processing file /home/tanle/Documents/Spotify_project/airflow_spotify.py/dags/extract.py for tasks to queue
+[2022-11-21T11:30:24.885+0700] {logging_mixin.py:120} INFO - [2022-11-21T11:30:24.885+0700] {dagbag.py:537} INFO - Filling up the DagBag from /home/tanle/Documents/Spotify_project/airflow_spotify.py/dags/extract.py
+[2022-11-21T11:30:24.886+0700] {processor.py:768} WARNING - No viable dags retrieved from /home/tanle/Documents/Spotify_project/airflow_spotify.py/dags/extract.py
+[2022-11-21T11:30:24.928+0700] {processor.py:176} INFO - Processing /home/tanle/Documents/Spotify_project/airflow_spotify.py/dags/extract.py took 0.047 seconds

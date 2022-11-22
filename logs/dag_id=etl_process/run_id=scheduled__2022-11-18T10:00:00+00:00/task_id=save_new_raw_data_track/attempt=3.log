@@ -1,0 +1,24 @@
+[2022-11-21T11:50:11.702+0700] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: etl_process.save_new_raw_data_track scheduled__2022-11-18T10:00:00+00:00 [queued]>
+[2022-11-21T11:50:11.727+0700] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: etl_process.save_new_raw_data_track scheduled__2022-11-18T10:00:00+00:00 [queued]>
+[2022-11-21T11:50:11.727+0700] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-21T11:50:11.727+0700] {taskinstance.py:1363} INFO - Starting attempt 3 of 5
+[2022-11-21T11:50:11.727+0700] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-21T11:50:11.807+0700] {taskinstance.py:1383} INFO - Executing <Task(_PythonDecoratedOperator): save_new_raw_data_track> on 2022-11-18 10:00:00+00:00
+[2022-11-21T11:50:11.848+0700] {standard_task_runner.py:55} INFO - Started process 123491 to run task
+[2022-11-21T11:50:11.859+0700] {standard_task_runner.py:82} INFO - Running: ['airflow', 'tasks', 'run', 'etl_process', 'save_new_raw_data_track', 'scheduled__2022-11-18T10:00:00+00:00', '--job-id', '161', '--raw', '--subdir', '/home/tanle/Documents/Spotify_project/airflow_spotify.py/dags/extract.py', '--cfg-path', '/tmp/tmpe4db0puc']
+[2022-11-21T11:50:11.863+0700] {standard_task_runner.py:83} INFO - Job 161: Subtask save_new_raw_data_track
+[2022-11-21T11:50:12.358+0700] {task_command.py:376} INFO - Running <TaskInstance: etl_process.save_new_raw_data_track scheduled__2022-11-18T10:00:00+00:00 [running]> on host tanle-Precision-M4600
+[2022-11-21T11:50:12.762+0700] {taskinstance.py:1590} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=lexuantan2000@gmail.com
+AIRFLOW_CTX_DAG_OWNER=tanle
+AIRFLOW_CTX_DAG_ID=etl_process
+AIRFLOW_CTX_TASK_ID=save_new_raw_data_track
+AIRFLOW_CTX_EXECUTION_DATE=2022-11-18T10:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=3
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-11-18T10:00:00+00:00
+[2022-11-21T11:50:12.803+0700] {python.py:177} INFO - Done. Returned value was: None
+[2022-11-21T11:50:12.842+0700] {taskinstance.py:1401} INFO - Marking task as SUCCESS. dag_id=etl_process, task_id=save_new_raw_data_track, execution_date=20221118T100000, start_date=20221121T045011, end_date=20221121T045012
+[2022-11-21T11:50:12.896+0700] {local_task_job.py:164} INFO - Task exited with return code 0
+[2022-11-21T11:50:12.988+0700] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

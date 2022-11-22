@@ -1,0 +1,25 @@
+[2022-11-20T14:59:20.369+0700] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: etl_process.refresh_token scheduled__2022-11-18T10:00:00+00:00 [queued]>
+[2022-11-20T14:59:20.412+0700] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: etl_process.refresh_token scheduled__2022-11-18T10:00:00+00:00 [queued]>
+[2022-11-20T14:59:20.412+0700] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-20T14:59:20.412+0700] {taskinstance.py:1363} INFO - Starting attempt 3 of 5
+[2022-11-20T14:59:20.412+0700] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-20T14:59:20.462+0700] {taskinstance.py:1383} INFO - Executing <Task(_PythonDecoratedOperator): refresh_token> on 2022-11-18 10:00:00+00:00
+[2022-11-20T14:59:20.467+0700] {standard_task_runner.py:55} INFO - Started process 90833 to run task
+[2022-11-20T14:59:20.471+0700] {standard_task_runner.py:82} INFO - Running: ['airflow', 'tasks', 'run', 'etl_process', 'refresh_token', 'scheduled__2022-11-18T10:00:00+00:00', '--job-id', '135', '--raw', '--subdir', '/home/tanle/Documents/Spotify_project/airflow_spotify.py/dags/extract.py', '--cfg-path', '/tmp/tmp67w17q1d']
+[2022-11-20T14:59:20.473+0700] {standard_task_runner.py:83} INFO - Job 135: Subtask refresh_token
+[2022-11-20T14:59:20.777+0700] {task_command.py:376} INFO - Running <TaskInstance: etl_process.refresh_token scheduled__2022-11-18T10:00:00+00:00 [running]> on host tanle-Precision-M4600
+[2022-11-20T14:59:21.028+0700] {taskinstance.py:1590} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=lexuantan2000@gmail.com
+AIRFLOW_CTX_DAG_OWNER=tanle
+AIRFLOW_CTX_DAG_ID=etl_process
+AIRFLOW_CTX_TASK_ID=refresh_token
+AIRFLOW_CTX_EXECUTION_DATE=2022-11-18T10:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=3
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-11-18T10:00:00+00:00
+[2022-11-20T14:59:21.726+0700] {logging_mixin.py:120} INFO - BQDd9Q8oyatnbsMXuxGtqyZFJfBE3j_Zo8RT5Q_nmjXEd7WyfgvF-pUqhKOjLx6U5lT4dODZKUcXpUcwVwDQnCWseqRSjptYPeK6og7N6rzf0Bq-IF5FBudniCf7P6p6UpWXdPwhL73UoexQKca-zxZPLFXbQ9RZ8yj1yyhJf89_qs0x-5fHyVCxwVI9XgM3gLDZl6RftEKmLI-VUG2nvYCdELjNYOj-gQhKsjKkrE676p-p_QxkJReWxuFdbv5IRk8ZuDgdJjLpDugRIQxXTqoi5s87BqaVFGS_nGBIM-05cw ***
+[2022-11-20T14:59:21.726+0700] {python.py:177} INFO - Done. Returned value was: None
+[2022-11-20T14:59:21.778+0700] {taskinstance.py:1401} INFO - Marking task as SUCCESS. dag_id=etl_process, task_id=refresh_token, execution_date=20221118T100000, start_date=20221120T075920, end_date=20221120T075921
+[2022-11-20T14:59:21.912+0700] {local_task_job.py:164} INFO - Task exited with return code 0
+[2022-11-20T14:59:21.981+0700] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
